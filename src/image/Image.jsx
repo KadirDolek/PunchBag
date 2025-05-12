@@ -1,11 +1,14 @@
-import './Image.css'
+export default function Image({ scale, vie }) {
 
 
-export default function Image(){
+const bg =
+    <img src="https://api.molengeek.education/storage/uploads/users/410/lesson/4051/bag.png" alt="" style={{transform: `scale(${scale})`}}/>
 
-    return(
-        <img src="https://api.molengeek.education/storage/uploads/users/410/lesson/4051/bag.png" alt="" />
-    )
-    
+const bg1 =
+    <img src="https://api.molengeek.education/storage/uploads/users/410/lesson/4051/bag-burst.png" alt="" />
 
+
+  return (
+    vie > 0 ? bg : bg1
+  );
 }
